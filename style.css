@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(240, 248, 255, 0.925);
+}
+/* cabeçalho */
+header{
+    background-color: #102a43;
+    color: rgb(231, 16, 16);
+    padding: 15px 30px;
+}
+.conteudo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+h1{
+    margin: 0;
+    font-size: 29px;
+    color: white;
+}
+nav{
+    display: flex;
+    gap: 25px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.logo img{
+    width: 75px;
+}
+nav a:hover{
+    color: #38bdf8;
+}
+main{
+    padding: 21px;
+}
+section h2{
+    color: rgba(20, 92, 160, 0.925);
+    border-color: 2px solid rgba(240, 248, 255, 0.925);
+    padding-bottom: 5px;
+}
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.produto{
+    background-color: white;
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.produto img{
+    width: 350px;
+    border-radius: 4px;
+}
+.produto h4{
+    margin: 10px 0 6px;
+    font-size: 19px;
+}
+.produto p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+}
+#preco{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+.rodape{
+    background-color:  #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+button{
+    margin-top: 20px;
+    background-color: #050aa3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+/* responsividade home */
+@media(max-width : 600px){
+    header{
+        padding: 15px;
+    }
+    nav a{
+        display: inline-block;
+        margin: 8px;
+        gap: 15px;
+    }
+    main{
+        padding: 15px;
+    }
+    .produto{
+        width: 100%;
+        max-width: 320px;
+    }
+}
